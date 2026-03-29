@@ -1,0 +1,25 @@
+---
+---
+<div class="publication-entry pub-type-{{ entry.type }}" id="{{ entry.key }}">
+  <div class="pub-line1">
+    {% if entry.abbr %}<span class="badge pub-badge">{{ entry.abbr }}</span>{% endif %}
+    {% if entry.html %}
+      <a class="pub-title" href="{{ entry.html }}" target="_blank">{{ entry.title }}</a>
+    {% elsif entry.url %}
+      <a class="pub-title" href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+    {% elsif entry.pdf %}
+      <a class="pub-title" href="{{ entry.pdf }}" target="_blank">{{ entry.title }}</a>
+    {% else %}
+      <span class="pub-title">{{ entry.title }}</span>
+    {% endif %}
+    {% if entry.award %}<span class="pub-award-inline"><i class="fas fa-trophy"></i> {{ entry.award }}</span>{% endif %}
+  </div>
+  <div class="pub-line2">
+    {% assign raw_authors = entry.author | split: " and " %}
+    {% capture formatted_authors %}{% for auth in raw_authors %}{% assign parts = auth | split: ", " %}{% if parts.size == 2 %}{{ parts[1] | strip }} {{ parts[0] | strip }}{% else %}{{ auth | strip }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
+    <span class="pub-authors">{{ formatted_authors }}</span>
+    <span class="pub-venue-inline">·
+      {% if entry.booktitle %}<em>{{ entry.booktitle }}</em>{% elsif entry.journal %}<em>{{ entry.journal }}</em>{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}{% if entry.volume %}, vol.&nbsp;{{ entry.volume }}{% endif %}{% if entry.pages %}, pp.&nbsp;{{ entry.pages }}{% endif %}
+    </span>
+  </div>
+</div>

@@ -1,0 +1,266 @@
+professors:
+  - name: "오일석"
+    name_en: "Il-Seok Oh"
+    title: "교수"
+    title_en: "Professor"
+    email: "isoh@jbnu.ac.kr"
+    phone: "063-270-3401"
+    office: "7호관 613"
+    research_interests:
+      - Computer Vision
+      - Pattern Recognition
+    links:
+      homepage: "http://cv.jbnu.ac.kr/"
+
+  - name: "이경순"
+    name_en: "Kyung-Soon Lee"
+    title: "교수"
+    title_en: "Professor"
+    email: "selfsolee@jbnu.ac.kr"
+    phone: "063-270-4138"
+    office: "7호관 601"
+    research_interests:
+      - Information Retrieval
+      - Data Mining
+    links:
+      homepage: "https://csai.jbnu.ac.kr/csai/29031/subview.do"
+
+  - name: "곽영태"
+    name_en: "Young-Tae Kwak"
+    title: "교수"
+    title_en: "Professor"
+    email: "ytkwak@jbnu.ac.kr"
+    phone: "063-270-4772"
+    office: "7호관 404"
+    research_interests:
+      - Pattern Recognition
+      - Image Processing
+    links:
+      homepage: "https://sites.google.com/view/ytkwak"
+
+  - name: "박현찬"
+    name_en: "Hyunchan Park"
+    title: "교수"
+    title_en: "Professor"
+    email: "hyunchan.park@jbnu.ac.kr"
+    phone: "063-270-3932"
+    office: "7호관 619"
+    research_interests:
+      - Operating Systems
+      - Virtualization
+    links:
+      homepage: "https://oslab.jbnu.ac.kr/"
+
+  - name: "김성찬"
+    name_en: "Sungchan Kim"
+    title: "교수"
+    title_en: "Professor"
+    email: "s.k@jbnu.ac.kr"
+    phone: "063-270-2411"
+    office: "7호관 606"
+    research_interests:
+      - Artificial Intelligence
+      - Computer Vision
+    links:
+      homepage: "https://vl.jbnu.ac.kr"
+
+associate_professors:
+  - name: "김찬기"
+    name_en: "Chanki Kim"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "carisis@jbnu.ac.kr"
+    phone: "063-270-4659"
+    office: "7호관 526"
+    research_interests:
+      - Computer Systems
+    links:
+      homepage: "https://jbnu-carisis.github.io/"
+
+  - name: "남창우"
+    name_en: "Changwoo Nam"
+    title: "교수"
+    title_en: "Professor"
+    email: "cun120@jbnu.ac.kr"
+    phone: "063-270-2363"
+    office: ""
+    research_interests:
+      - Functional Materials
+      - Polymer Science
+    links:
+      homepage: "https://sites.google.com/view/namresearchgroup/home"
+
+  - name: "윤수경"
+    name_en: "Su-Kyung Yoon"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "sk.yoon@jbnu.ac.kr"
+    phone: "063-270-3499"
+    office: "7호관 622"
+    research_interests:
+      - Computer Architecture
+      - Memory Systems
+    links:
+      homepage: "https://sites.google.com/site/skyoon217/"
+
+  - name: "이세호"
+    name_en: "Seho Lee"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "seholee@jbnu.ac.kr"
+    phone: "063-270-2417"
+    office: "7호관 510"
+    research_interests:
+      - Computer Vision
+      - Image Processing
+    links:
+      homepage: "https://jbnu-vilab.github.io/"
+
+  - name: "송현제"
+    name_en: "Hyun-Je Song"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "hyunje.song@jbnu.ac.kr"
+    phone: "063-270-4774"
+    office: "7호관 432"
+    research_interests:
+      - Machine Learning
+      - Natural Language Processing
+    links:
+      homepage: "https://sites.google.com/view/nlllab"
+
+  - name: "김광수"
+    name_en: "Gwangsu Kim"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "s88012@jbnu.ac.kr"
+    phone: ""
+    office: ""
+    research_interests:
+      - Statistical Learning
+      - Bayesian Nonparametrics
+      - Active Learning
+    links:
+      homepage: "https://s88012.github.io/gwangsu.github.io/"
+
+  - name: "김윤상"
+    name_en: "Yun-Sang Kim"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "ksunys@jbnu.ac.kr"
+    phone: ""
+    office: ""
+    research_interests:
+      - Architectural Planning
+      - AI in Architecture
+    links:
+      homepage: "https://archi.jbnu.ac.kr/archi/9701/subview.do"
+
+  - name: "류덕산"
+    name_en: "Duksan Ryu"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "duksan.ryu@jbnu.ac.kr"
+    phone: ""
+    office: ""
+    research_interests:
+      - AI for Software Engineering
+      - Software Reliability
+      - Large Language Models
+    links:
+      homepage: "https://sites.google.com/view/aiselabjbnu"
+
+  - name: "김태곤"
+    name_en: "Taegon Kim"
+    title: "부교수"
+    title_en: "Associate Professor"
+    email: "taegon@jbnu.ac.kr"
+    phone: ""
+    office: ""
+    research_interests:
+      - Digital Agriculture
+      - Crop Modeling
+      - Remote Sensing
+    links:
+      homepage: "https://smartdigitalag.github.io/"
+
+assistant_professors:
+  - name: "박순찬"
+    name_en: "Soonchan Park"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "soonchan.park@jbnu.ac.kr"
+    phone: "063-270-4634"
+    office: "7호관 608"
+    research_interests:
+      - Generative AI
+      - Image Recognition
+    links:
+      homepage: "https://sites.google.com/view/parslab/"
+      scholar_id: "I4YH_pQAAAAJ"
+
+  - name: "박혁우"
+    name_en: "Hyukwoo Park"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "hyukwoo.park@jbnu.ac.kr"
+    phone: "063-270-3437"
+    office: "7호관 533"
+    research_interests:
+      - Compilers
+    links:
+      homepage: "https://sites.google.com/view/compintel-lab"
+
+  - name: "이경수"
+    name_en: "Kyungsu Lee"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "ksl@jbnu.ac.kr"
+    phone: "063-270-2406"
+    office: "7호관 621"
+    research_interests:
+      - Deep Learning
+      - Medical Image Processing
+    links:
+      homepage: "https://jbnu.macs.or.kr"
+
+  - name: "이제민"
+    name_en: "Jemin Lee"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "jemin.lee@jbnu.ac.kr"
+    phone: "063-270-4637"
+    office: "7호관 602"
+    research_interests:
+      - AI Systems
+      - Efficient AI
+    links:
+      homepage: "https://leejaymin.github.io/index.html"
+      scholar_id: "BcVJExUAAAAJ"
+
+  - name: "정요한"
+    name_en: "Yohan Jung"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "yohan.jung@jbnu.ac.kr"
+    phone: "063-270-3438"
+    office: "7호관 312"
+    research_interests:
+      - Probabilistic Machine Learning
+      - Deep Learning
+    links:
+      homepage: "https://e2ee22.github.io/"
+      scholar_id: "DwAJS14AAAAJ"
+
+  - name: "정종욱"
+    name_en: "Jongwook Jeong"
+    title: "조교수"
+    title_en: "Assistant Professor"
+    email: "jwjeong55@jbnu.ac.kr"
+    phone: "063-270-3428"
+    office: "7호관 503"
+    research_interests:
+      - Human-Computer Interaction
+    links:
+      homepage: "https://sites.google.com/view/sit-lab"
+      scholar_id: "J_WZPNIAAAAJ"

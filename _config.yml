@@ -1,0 +1,87 @@
+title: "영상정보신기술연구센터"
+title_en: "Center for Advanced Image and AI Technology"
+university: "전북대학교 (Jeonbuk National University)"
+email: "ailab@jbnu.ac.kr"
+description: >-
+  전북대학교 영상정보신기술연구센터는 컴퓨터 비전·영상처리·딥러닝을 중심으로
+  인공지능 전반에 걸친 핵심 원천 및 융합 기술을 연구하는 연구센터입니다.
+baseurl: ""
+url: "https://jbnu-ai.github.io"
+logo: "/assets/images/logo.png"
+
+# Navigation
+nav_pages:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+    children:
+      - title: About
+        url: /about/
+      - title: People
+        url: /about/people/
+  - title: Research
+    url: /research/
+    children:
+      - title: Research Areas
+        url: /research/
+      - title: Publications
+        url: /research/publications/
+  - title: News
+    url: /news/
+  - title: Gallery
+    url: /gallery/
+  - title: Contact
+    url: /contact/
+
+# Scholar (jekyll-scholar)
+scholar:
+  last_name: []
+  first_name: []
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+  group_by: year
+  group_order: descending
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+  bibliography_list_attributes:
+    reversed: "reversed"
+
+# Build settings
+plugins:
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache

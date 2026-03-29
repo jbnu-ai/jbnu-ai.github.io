@@ -1,0 +1,114 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="hero-title">
+          영상정보신기술연구센터
+        </h1>
+        <h2 class="hero-subtitle">
+          Center for Advanced Image &amp; AI Technology
+        </h2>
+        <p class="hero-description">
+          전북대학교 영상정보신기술연구센터는 인공지능 분야를 중심으로 다양한 학문 간 융합을 통해
+          핵심 원천기술을 연구합니다. 또한 학문적 탁월성과 실용적 응용을 바탕으로 지역 사회 발전에
+          기여하며, 세계 수준의 연구 성과 창출을 목표로 합니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="{{ '/research/publications/' | relative_url }}" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-book-open me-2"></i>Publications
+          </a>
+          <a href="{{ '/about/people/' | relative_url }}" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-users me-2"></i>Our Team
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <div class="hero-graphic">
+          <i class="fas fa-brain fa-8x text-white opacity-25"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex align-items-baseline gap-3 mb-4">
+      <h2 class="section-title mb-0">News</h2>
+      <a href="{{ '/news/' | relative_url }}" class="small text-muted">전체 보기 →</a>
+    </div>
+    <div class="news-list">
+      {% assign sorted_news = site.data.news | sort: "date" | reverse %}
+      {% for item in sorted_news limit: 5 %}
+      {% assign anchor = item.date | date: "%Y%m%d" %}
+      <div class="news-item">
+        <span class="news-date">{{ item.date | date: "%Y.%m.%d" }}</span>
+        <span class="news-content">
+          <span class="news-category-badge cat-{{ item.category }} me-1">
+            {% case item.category %}
+              {% when 'event' %}Event
+              {% when 'paper' %}Paper
+              {% when 'award' %}Award
+              {% when 'announcement' %}Notice
+              {% else %}{{ item.category }}
+            {% endcase %}
+          </span>
+          <a href="{{ '/news/' | relative_url }}#news-{{ anchor }}" class="news-link">{{ item.title }}</a>
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section class="py-4 bg-light">
+  <div class="container">
+    <div class="row justify-content-center g-3">
+      <div class="col-6 col-sm-3 col-lg-2">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Publications</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-2">
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Lab Members</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-2">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-2">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Citations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Publications -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Selected Publications</h2>
+    {% bibliography --query @*[selected=true][year>=2025] %}
+    <div class="text-center mt-4">
+      <a href="{{ '/research/publications/' | relative_url }}" class="btn btn-primary">
+        View All Publications <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </div>
+</section>

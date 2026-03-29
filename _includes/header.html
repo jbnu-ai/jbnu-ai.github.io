@@ -1,0 +1,88 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <div class="brand-wrapper">
+          <span class="brand-univ">전북대학교</span>
+          <span class="brand-center">영상정보신기술연구센터</span>
+          <span class="brand-en">Center for Advanced Image & AI Technology</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/' %}active{% endif %}"
+               href="{{ '/' | relative_url }}">Home</a>
+          </li>
+
+          <!-- About dropdown -->
+          {% assign about_active = false %}
+          {% if page.url contains '/about' %}{% assign about_active = true %}{% endif %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {% if about_active %}active{% endif %}"
+               href="{{ '/about/' | relative_url }}"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item {% if page.url == '/about/' %}active{% endif %}"
+                   href="{{ '/about/' | relative_url }}">About</a>
+              </li>
+              <li>
+                <a class="dropdown-item {% if page.url contains '/about/people' %}active{% endif %}"
+                   href="{{ '/about/people/' | relative_url }}">People</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Research dropdown -->
+          {% assign research_active = false %}
+          {% if page.url contains '/research' %}{% assign research_active = true %}{% endif %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {% if research_active %}active{% endif %}"
+               href="{{ '/research/' | relative_url }}"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Research
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item {% if page.url == '/research/' %}active{% endif %}"
+                   href="{{ '/research/' | relative_url }}">Research Areas</a>
+              </li>
+              <li>
+                <a class="dropdown-item {% if page.url contains '/research/publications' %}active{% endif %}"
+                   href="{{ '/research/publications/' | relative_url }}">Publications</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/news/' %}active{% endif %}"
+               href="{{ '/news/' | relative_url }}">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if page.url contains '/gallery' %}active{% endif %}"
+               href="{{ '/gallery/' | relative_url }}">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if page.url contains '/contact' %}active{% endif %}"
+               href="{{ '/contact/' | relative_url }}">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
